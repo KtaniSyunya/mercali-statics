@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.keys import Keys
 
 # プロファイルデータのPATHとユーザー名を指定
-profile_path = r"プロファイル保存先のパス"
+profile_path = r"/Users/kottani/Library/Application Support/Google/Chrome/Profile_test"
 print("ユーザー情報の場所：", profile_path)
 account_name = 'admin'
 
@@ -17,10 +17,11 @@ options.add_argument('--no-sandbox')
 options.add_argument('--user-data-dir=' + profile_path)
 options.add_argument(f'--profile-directory={account_name}')
 
-#売上履歴のページから売上を取得
+#ログイン後に開く画面
 driver = webdriver.Chrome(options=options)
 driver.get("https://jp.mercari.com/mypage/sales_history")
 time.sleep(1)
+
 
 Earnings_list = []
 
@@ -29,3 +30,12 @@ for i in Earnings:
     Earnings_list.append(i.text)
 
 print(Earnings_list)
+
+
+
+
+
+#contents = driver.find_elements(by=By.CLASS_NAME, value="content__884ec505")
+#for i in contents:
+    #print(i.text)
+

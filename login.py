@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time
 
+
 # プロファイルデータのPATHとユーザー名を指定
 profile_path = r"プロファイル保存先のパス"
 print("ユーザー情報の場所：", profile_path)
