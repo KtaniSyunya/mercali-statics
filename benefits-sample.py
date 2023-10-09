@@ -1,30 +1,31 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 import time
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
 
-# ログイン画面URL
-url = "https://login.jp.mercari.com/signin?params=client_id%3DbP4zN6jIZQeutikiUFpbx307DVK1pmoW%26code_challenge%3DD8k7fwRsuFP-NJxTR60f5FJP1jYhLmBaxyTKgkCfZns%26code_challenge_method%3DS256%26nonce%3DnZ4ALynO-5IW%26redirect_uri%3Dhttps%253A%252F%252Fjp.mercari.com%252Fauth%252Fcallback%26response_type%3Dcode%26scope%3Dmercari%2520openid%26state%3DeyJwYXRoIjoiLyIsInJhbmRvbSI6InVjaVBqNDdvTjc2NiJ9%26ui_locales%3Dja"
+# プロファイルデータのPATHとユーザー名を指定
+profile_path = r"プロファイル保存先のパス"
+print("ユーザー情報の場所：", profile_path)
+account_name = 'admin'
 
-# chromedriverの設定とキーワード検索実行
-browser = webdriver.Chrome()
-browser.get(url)
-USER = "XXXXXXX"
-PASS = "XXXXXXX"
+# ドライバ設定
+options = Options()
+options.add_argument('--lang=ja')
+options.add_argument('--no-sandbox')
+options.add_argument('--user-data-dir=' + profile_path)
+options.add_argument(f'--profile-directory={account_name}')
 
-elem_username  = browser.find_element(By.NAME, "emailOrPhone")
-elem_username.send_keys(USER)
-elem_password = browser.find_element(By.NAME, "password")
-elem_password.send_keys(PASS)
-time.sleep(5)
+#売上履歴のページから売上を取得
+driver = webdriver.Chrome(options=options)
+driver.get("https://jp.mercari.com/mypage/sales_history")
+time.sleep(1)
 
-browser_from = browser.find_element(By.CLASS_NAME,"merButton")
-browser_from.click()
-print("ログイン成功です!")
-time.sleep(30)
+Earnings_list = []
 
+Earnings  = driver.find_elements(by=By.CLASS_NAME, value="number__6b270ca7")
+for i in Earnings:
+    Earnings_list.append(i.text)
 
-
-
-#/Users/kottani/Library/Application Support/Google/Chrome/Profile 1
+print(Earnings_list)
