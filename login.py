@@ -18,5 +18,4 @@ options.add_argument(f'--profile-directory={account_name}')
 #ログイン後に開く画面
 driver = webdriver.Chrome(options=options)
 driver.get("ログイン後のページURL")
-time.sleep(50)
-
+time.sleep(40)
