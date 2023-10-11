@@ -2,8 +2,8 @@
 メルカリの売上履歴というページから、その年、月いくら”売上利益”があったか自動抽出するスクリプトを作成
 
 # 使用法
-![Uploading スクリーンショット 2023-10-11 21.23.29.png…]()
 
+<img width="599" alt="スクリーンショット 2023-10-11 21 25 04" src="https://github.com/KtaniSyunya/mercali-statics/assets/98572375/0fb6a549-d79f-4340-8ace-bc89d9812597">
 
 
 # Features
