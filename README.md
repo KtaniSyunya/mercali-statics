@@ -2,11 +2,10 @@
 メルカリの売上履歴というページから、その年、月いくら”売上利益”があったか自動抽出するスクリプト
 
 # Installing / インストール
+seleniumのインストール
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+```python
+pip install selenium
 ```
 
 # 使用法
