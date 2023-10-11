@@ -3,7 +3,7 @@
 
 # 使用法
 1.chromedriverをインストール  
-※chromeDriverと現在のchromeのバージョンは合わせる必要があります
+※chromeDriverと現在のchromeのバージョンは合わせる必要があります  
 2.通常とは別のユーザープロファイルを置くフォルダを作る  
 3.2.で作成したユーザープロファイルを指定させる（login.py）  
 4.benefits-sample.pyを年・月を指定し実行  
