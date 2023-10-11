@@ -38,14 +38,14 @@ for i in contents:
     contents_list
 contents_list = contents_list[23:]
 
-earninges = []
-earninges = list(zip(contents_list,Earnings_list))
+Earninges = []
+Earninges = list(zip(contents_list,Earnings_list))
 
 #検索したい年・月の入力
 search_year = input("検索する年を入力してください(××××年)")
 search_month = input("検索する月を入力してください(××月)")
 
-filtered_list = [pair for pair in earninges if "販売利益\n"+str(search_year)+"/"+str(search_month) in pair[0]]
+filtered_list = [pair for pair in Earninges if "販売利益\n"+str(search_year)+"/"+str(search_month) in pair[0]]
 print(filtered_list)
 
 #販売利益の合計
