@@ -1,14 +1,19 @@
-# メルカリの売上利益を算出するスクリプト
+# mercali-statics
+
+
+
+# Overview
 メルカリの売上履歴というページから、その年、月いくら”売上利益”があったか自動抽出するスクリプト
 
-# Installing / インストール
+# Installing 
 seleniumのインストール
 
 ```python
 pip install selenium
 ```
 
-# 使用法
+
+# Usage
 1.chromedriverをインストール  
 ※chromeDriverと現在のchromeのバージョンは合わせる必要があります  
 2.通常とは別のユーザープロファイルを置くフォルダを作る  
@@ -20,9 +25,11 @@ pip install selenium
 <img width="599" alt="スクリーンショット 2023-10-11 21 25 04" src="https://github.com/KtaniSyunya/mercali-statics/assets/98572375/0fb6a549-d79f-4340-8ace-bc89d9812597">
 
 
-# Features
+# Requirement
 
-"hoge"のセールスポイントや差別化などを説明する
+```python
+Python 3.9.7
+```
 
 # Requirement
 
