@@ -1,5 +1,13 @@
 # メルカリの売上利益を算出するスクリプト
-メルカリの売上履歴というページから、その年、月いくら”売上利益”があったか自動抽出するスクリプトを作成
+メルカリの売上履歴というページから、その年、月いくら”売上利益”があったか自動抽出するスクリプト
+
+# Installing / インストール
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
 
 # 使用法
 1.chromedriverをインストール  
