@@ -24,19 +24,12 @@ pip install selenium
 実行結果↓
 <img width="599" alt="スクリーンショット 2023-10-11 21 25 04" src="https://github.com/KtaniSyunya/mercali-statics/assets/98572375/0fb6a549-d79f-4340-8ace-bc89d9812597">
 
-
-# Requirement
-
-```python
-Python 3.9.7
-```
-
 # Requirement
 
 "hoge"を動かすのに必要なライブラリなどを列挙する
 
-* huga 3.5.2
-* hogehuga 1.0.2
+* Python 3.9.7
+* macOS  12.6.3
 
 # Installation
 
