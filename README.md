@@ -2,10 +2,11 @@
 メルカリの売上履歴というページから、その年、月いくら”売上利益”があったか自動抽出するスクリプトを作成
 
 # 使用法
-1.chromedriverをインストール（chromeDriverと現在のchromeのバージョンは合わせる必要があります。）
-2.通常とは別のユーザープロファイルを置くフォルダを作る
-3.2.で作成したユーザープロファイルを指定させる（login.py）
-4.benefits-sample.pyを年・月を指定し実行
+1.chromedriverをインストール（chromeDriverと現在のchromeのバージョンは合わせる必要があります。）  
+2.通常とは別のユーザープロファイルを置くフォルダを作る  
+3.2.で作成したユーザープロファイルを指定させる（login.py）  
+4.benefits-sample.pyを年・月を指定し実行  
+
 
 実行結果↓
 <img width="599" alt="スクリーンショット 2023-10-11 21 25 04" src="https://github.com/KtaniSyunya/mercali-statics/assets/98572375/0fb6a549-d79f-4340-8ace-bc89d9812597">
